@@ -268,3 +268,36 @@ footer {
     color:#444;
   }
 }
+
+/* --- Profile (left column) --- */
+.profile-img{
+  width: 180px;
+  height: 180px;
+  border-radius: 9999px;
+  object-fit: cover;
+  display: block;
+  margin: 0 0 18px 0;
+}
+
+.title{
+  margin: 6px 0 0 0;
+  font-weight: 600;
+}
+
+.affil{
+  margin: 14px 0 0 0;
+}
+
+.contact{
+  margin: 12px 0 0 0;
+}
+
+.profile-links{
+  list-style: none;
+  padding-left: 0;
+  margin: 16px 0 0 0;
+}
+
+.profile-links li{
+  margin: 6px 0;
+}
