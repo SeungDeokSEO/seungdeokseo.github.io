@@ -429,3 +429,47 @@ header h1{
 .profile-links{
   display: none;             /* ❗ 일단 숨기는 게 예시와 가장 유사 */
 }
+
+
+/* === FIX: prevent header (fixed) from overlapping main content === */
+
+.wrapper{
+  width: 860px;          /* 테마 기본값으로 고정 */
+  margin: 0 auto;
+}
+
+header{
+  width: 270px;          /* 테마 기본값 유지 */
+  position: fixed;       /* 왼쪽 고정 */
+  left: auto;
+  top: 50px;             /* body padding(50px)와 맞춤 */
+}
+
+section{
+  width: 500px;          /* 테마 기본값 유지 */
+  float: none;           /* float 꼬임 방지 */
+  margin-left: 340px;    /* ✅ header(270) + 간격(70) 만큼 띄움 */
+  padding-bottom: 50px;
+}
+
+
+/* === FIX: prevent header (fixed) from overlapping main content === */
+
+.wrapper{
+  width: 860px;          /* 테마 기본값으로 고정 */
+  margin: 0 auto;
+}
+
+header{
+  width: 270px;          /* 테마 기본값 유지 */
+  position: fixed;       /* 왼쪽 고정 */
+  left: auto;
+  top: 50px;             /* body padding(50px)와 맞춤 */
+}
+
+section{
+  width: 500px;          /* 테마 기본값 유지 */
+  float: none;           /* float 꼬임 방지 */
+  margin-left: 340px;    /* ✅ header(270) + 간격(70) 만큼 띄움 */
+  padding-bottom: 50px;
+}
