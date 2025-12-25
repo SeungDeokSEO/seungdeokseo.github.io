@@ -363,3 +363,22 @@ header h1{
 .profile-links li:last-child a{
   border-right: none;
 }
+/* --- Center the profile block in the left column --- */
+header{
+  text-align: center;
+}
+
+.profile-img{
+  display: block;
+  margin: 0 auto 22px auto;
+}
+
+.affil, .contact{
+  text-align: center;
+}
+
+.profile-links{
+  width: 100%;
+  max-width: 270px;
+  margin: 18px auto 0 auto;
+}
