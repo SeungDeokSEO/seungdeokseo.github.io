@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="/stylesheets/styles.css">
+<style>header, footer { display:none; } section { width:860px; float:none; }</style>
+
 ---
 layout: default
 title: Photography
@@ -7,20 +10,20 @@ title: Photography
 <p>Selected photographs from professional work, Arabic language training, and time spent in the Middle East (pre-doctoral).</p>
 
 <div class="gallery" id="gallery">
-  <img src="/assets/photos/photo_1.JPG" alt="Photo 1" loading="lazy">
-  <img src="/assets/photos/photo_2.JPG" alt="Photo 2" loading="lazy">
-  <img src="/assets/photos/photo_3.JPG" alt="Photo 3" loading="lazy">
-  <img src="/assets/photos/photo_4.JPG" alt="Photo 4" loading="lazy">
-  <img src="/assets/photos/photo_5.JPG" alt="Photo 5" loading="lazy">
-  <img src="/assets/photos/photo_6.JPG" alt="Photo 6" loading="lazy">
-  <img src="/assets/photos/photo_7.JPG" alt="Photo 7" loading="lazy">
-  <img src="/assets/photos/photo_8.JPG" alt="Photo 8" loading="lazy">
-  <img src="/assets/photos/photo_9.JPG" alt="Photo 9" loading="lazy">
-  <img src="/assets/photos/photo_10.JPG" alt="Photo 10" loading="lazy">
-  <img src="/assets/photos/photo_11.JPG" alt="Photo 11" loading="lazy">
-  <img src="/assets/photos/photo_12.JPG" alt="Photo 12" loading="lazy">
-  <img src="/assets/photos/photo_13.JPG" alt="Photo 13" loading="lazy">
-  <img src="/assets/photos/photo_14.jpg" alt="Photo 14" loading="lazy">
+  <img src="/assets/photos/photo_1.JPG" alt="photo 1" loading="lazy">
+  <img src="/assets/photos/photo_2.JPG" alt="photo 2" loading="lazy">
+  <img src="/assets/photos/photo_3.JPG" alt="photo 3" loading="lazy">
+  <img src="/assets/photos/photo_4.JPG" alt="photo 4" loading="lazy">
+  <img src="/assets/photos/photo_5.JPG" alt="photo 5" loading="lazy">
+  <img src="/assets/photos/photo_6.JPG" alt="photo 6" loading="lazy">
+  <img src="/assets/photos/photo_7.JPG" alt="photo 7" loading="lazy">
+  <img src="/assets/photos/photo_8.JPG" alt="photo 8" loading="lazy">
+  <img src="/assets/photos/photo_9.JPG" alt="photo 9" loading="lazy">
+  <img src="/assets/photos/photo_10.JPG" alt="photo 10" loading="lazy">
+  <img src="/assets/photos/photo_11.JPG" alt="photo 11" loading="lazy">
+  <img src="/assets/photos/photo_12.JPG" alt="photo 12" loading="lazy">
+  <img src="/assets/photos/photo_13.JPG" alt="photo 13" loading="lazy">
+  <img src="/assets/photos/photo_14.jpg" alt="photo 14" loading="lazy">
 </div>
 
 <div class="lightbox" id="lightbox" aria-hidden="true">
@@ -37,7 +40,6 @@ title: Photography
   gallery.addEventListener('click', (e) => {
     if (e.target.tagName !== 'IMG') return;
     lbImg.src = e.target.src;
-    lbImg.alt = e.target.alt || '';
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden', 'false');
   });
@@ -46,7 +48,6 @@ title: Photography
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden', 'true');
     lbImg.src = '';
-    lbImg.alt = '';
   };
 
   lbClose.addEventListener('click', closeLB);
