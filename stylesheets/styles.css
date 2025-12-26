@@ -347,3 +347,54 @@ footer {
   border:0;
   cursor:pointer;
 }
+
+
+
+/* --- Photography gallery --- */
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.gallery img{
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+/* lightbox */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+  padding: 24px;
+}
+
+.lightbox.open{ display: flex; }
+
+.lb-img{
+  max-width: 95vw;
+  max-height: 90vh;
+  border-radius: 12px;
+}
+
+.lb-close{
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-size: 34px;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
