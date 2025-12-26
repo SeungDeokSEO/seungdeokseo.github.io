@@ -1,1 +1,54 @@
+---
+layout: default
+title: Photography
+---
+
+<h1>Photography</h1>
+<p>Selected photographs from professional work, Arabic language training, and time spent in the Middle East (pre-doctoral).</p>
+
+<div class="gallery" id="gallery">
+  <img src="/assets/photos/photo_1.JPG" alt="photo 1" loading="lazy">
+  <img src="/assets/photos/photo_2.JPG" alt="photo 2" loading="lazy">
+  <img src="/assets/photos/photo_3.JPG" alt="photo 3" loading="lazy">
+  <img src="/assets/photos/photo_4.JPG" alt="photo 4" loading="lazy">
+  <img src="/assets/photos/photo_5.JPG" alt="photo 5" loading="lazy">
+  <img src="/assets/photos/photo_6.JPG" alt="photo 6" loading="lazy">
+  <img src="/assets/photos/photo_7.JPG" alt="photo 7" loading="lazy">
+  <img src="/assets/photos/photo_8.JPG" alt="photo 8" loading="lazy">
+  <img src="/assets/photos/photo_9.JPG" alt="photo 9" loading="lazy">
+  <img src="/assets/photos/photo_10.JPG" alt="photo 10" loading="lazy">
+  <img src="/assets/photos/photo_11.JPG" alt="photo 11" loading="lazy">
+  <img src="/assets/photos/photo_12.JPG" alt="photo 12" loading="lazy">
+  <img src="/assets/photos/photo_13.JPG" alt="photo 13" loading="lazy">
+  <img src="/assets/photos/photo_14.jpg" alt="photo 14" loading="lazy">
+</div>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+  <img class="lb-img" id="lbImg" alt="">
+</div>
+
+<script>
+  const gallery = document.getElementById('gallery');
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbClose = document.getElementById('lbClose');
+
+  gallery.addEventListener('click', (e) => {
+    if (e.target.tagName !== 'IMG') return;
+    lbImg.src = e.target.src;
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+  });
+
+  const closeLB = () => {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lbImg.src = '';
+  };
+
+  lbClose.addEventListener('click', closeLB);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLB(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLB(); });
+</script>
 
