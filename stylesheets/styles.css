@@ -422,3 +422,7 @@ footer {
   text-justify: inter-word;
   line-height: 1.65;
 }
+
+footer {
+  display: none;
+}
