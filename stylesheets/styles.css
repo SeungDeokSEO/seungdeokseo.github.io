@@ -415,3 +415,10 @@ footer {
   cursor:pointer;
   display:block;
 }
+
+
+.bio-text p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.65;
+}
