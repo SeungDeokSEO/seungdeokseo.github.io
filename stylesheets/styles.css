@@ -39,20 +39,16 @@ a {
   text-decoration:none;
 }
 
+a {
+  color: #1f6f4a;
+  text-decoration: none;
+}
+
 a:hover {
-  color:#069;
+  color: #145233;
+  text-decoration: underline;
 }
 
-a small {
-  font-size:11px;
-  color:#777;
-  margin-top:-0.3em;
-  display:block;
-}
-
-a:hover small {
-  color:#777;
-}
 
 .wrapper {
   width:860px;
