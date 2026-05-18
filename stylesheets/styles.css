@@ -428,7 +428,7 @@ footer {
 
 .abstract-box summary {
   cursor: pointer;
-  color: #494949;
+  color: #2b6f9f;
 }
 
 .abstract-box p {
@@ -437,6 +437,7 @@ footer {
   text-align: justify;
   text-justify: inter-word;
 }
+
 
 .paper-list {
   margin-top: 8px;
