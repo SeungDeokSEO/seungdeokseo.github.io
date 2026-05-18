@@ -37,15 +37,16 @@ h3, h4, h5, h6 {
 
 a,
 a:visited {
-  color: #1f4e79;
+  color: #2b6f9f;
   text-decoration: none;
   font-weight: 500;
 }
 
 a:hover {
-  color: #163a5c;
+  color: #1f4e79;
   text-decoration: underline;
 }
+
 .wrapper {
   width:860px;
   margin:0 auto;
