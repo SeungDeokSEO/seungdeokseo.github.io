@@ -418,3 +418,21 @@ footer {
 footer {
   display: none;
 }
+
+
+.abstract-box {
+  margin-top: 6px;
+  margin-bottom: 14px;
+}
+
+.abstract-box summary {
+  cursor: pointer;
+  color: #494949;
+}
+
+.abstract-box p {
+  margin-top: 8px;
+  line-height: 1.65;
+  text-align: justify;
+  text-justify: inter-word;
+}
