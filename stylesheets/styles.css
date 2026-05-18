@@ -34,12 +34,9 @@ h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-a {
-  color:#39c;
-  text-decoration:none;
-}
 
-a {
+a,
+a:visited {
   color: #1f6f4a;
   text-decoration: none;
 }
@@ -48,7 +45,6 @@ a:hover {
   color: #145233;
   text-decoration: underline;
 }
-
 
 .wrapper {
   width:860px;
